@@ -1,0 +1,138 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    text-transform: capitalize;
+}
+.logo{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.logo img{
+    height:100px;
+    width:150px;
+}
+nav{
+    width: 100%;
+    background-color: rgb(236, 234, 224);
+    height: 70px;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+nav ul li{
+    line-height: 70px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none; 
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    border-radius: 3px;
+}
+nav ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.785);
+    color: rgb(236, 234, 224);
+    transition: .5s;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.main{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(assets/main-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 80vh;
+}
+.main-notes{
+    transition:.5s;
+}
+.main-notes h1{
+font-size: 30px;
+font-weight: bold;
+margin-left: 80px;
+}
+.main-notes h2{
+    font-size: 26px;
+    font-weight: bold;
+}
+.main-notes p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 150px;
+}
+.latest-news-tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+.news{
+    margin: 5px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.news-post{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+.news-post img{
+    height: 300px;
+    width: 400px;
+    align-items: center;
+    overflow: hidden;
+}
+.learn-more{
+    background-color: rgba(0, 0, 0, 0.755);
+    border: none;
+    font-size: 20px;
+    font-weight: 200;
+    color: white;
+    width: 100%;
+    padding: 10px;
+}
+.news-post img:hover{
+    opacity: .8;
+}
+.legecy{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%; 
+}
+.legecy-image{
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    margin-left: 10%;
+}
+.legecy img{
+    width: 400px;
+    height: 300px;
+}
