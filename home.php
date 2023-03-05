@@ -57,7 +57,7 @@
         <img src="assets/main-image.jpg" alt="">
         </div>
             <div class="legecy-comment">
-                <h1>Legecy that we are caring for 105years</h1>
+                <h1>Legecy that we are carring <br> for 105 years</h1>
                 <p>And we promise we will carry forever</p>
             </div>
     </section>
@@ -95,7 +95,7 @@
     </section>
     <!-- finally me :) -->
     <section class="end">
-        <h1>this website is created by <span>Shahensha</span></h1>
+        <h1>this website is created by <a href="https:/shahensha.tech" target="_blank">Shahensha</a></h1>
     </section>
 </body>
 </html>
