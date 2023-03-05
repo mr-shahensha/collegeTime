@@ -95,7 +95,7 @@
     </section>
     <!-- finally me :) -->
     <section class="end">
-        <h1>this website is created by <a href="https:/shahensha.tech" target="_blank">Shahensha</a></h1>
+        <h1 >this website is created by <a style="color:rgba(0, 0, 0, 0.755);" href="https:/shahensha.tech" target="_blank">Shahensha</a></h1>
     </section>
 </body>
 </html>
