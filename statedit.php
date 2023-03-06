@@ -1,6 +1,6 @@
 <?php
-include("connection.php");
-include("back.php");
+ include("logic/connection.php");
+ include("logic/back.php");
 $stat=$_REQUEST['stat'];
 $stud=$_REQUEST['stud'];
 $sid=$_REQUEST['sid'];

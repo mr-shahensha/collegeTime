@@ -18,7 +18,7 @@
                 ?>
                 <script>
                      alert("password succesfully updated");
-                document.location="profile.php";
+                document.location="../profile.php";
                 </script>
                 <?php
             }else{

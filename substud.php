@@ -1,6 +1,6 @@
 <?php 
-include("connection.php");
-$ssn=$_REQUEST['ssn'];
+ include("logic/connection.php");
+ $ssn=$_REQUEST['ssn'];
 $deg=$_REQUEST['deg'];
 $crs=$_REQUEST['crs'];
 $clg=$_REQUEST['clg'];

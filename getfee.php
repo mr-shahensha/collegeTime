@@ -1,6 +1,6 @@
 <?php 
-include("connection.php");
-$degid=$_REQUEST['deg'];
+ include("logic/connection.php");
+ $degid=$_REQUEST['deg'];
 $crsid=$_REQUEST['crs'];
 $clg=$_REQUEST['clg'];
 if($degid==0 && $crsid==0 && $clg==0){

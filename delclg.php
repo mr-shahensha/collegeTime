@@ -1,6 +1,6 @@
 <?php 
-include("connection.php");
-$sid=$_REQUEST['sid'];
+ include("logic/connection.php");
+ $sid=$_REQUEST['sid'];
 $query=mysqli_query($con,"delete from college where sid='$sid'")or die(mysqli_error());
 ?>
 <script>

@@ -31,7 +31,7 @@
     </script>
 </head>
 <body>
-    <form action="loginlogic.php" method="post" onsubmit="return validation()">
+    <form action="logic/loginlogic.php" method="post" onsubmit="return validation()">
         <table border='1'>
             <tr>
                 <td>

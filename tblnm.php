@@ -1,6 +1,6 @@
 <?php 
-include("connection.php");
-$value=$_REQUEST['value'];
+ include("logic/connection.php");
+ $value=$_REQUEST['value'];
 
 
 ?>

@@ -1,6 +1,6 @@
 <?php 
-include("connection.php");
-include("back.php");
+include("logic/connection.php");
+include("logic/back.php");
 $stud_id=$_REQUEST['stud_id'];
 $query3=mysqli_query($con,"SELECT * FROM `student` where myid='$stud_id'");
 while($result3=mysqli_fetch_assoc($query3)){

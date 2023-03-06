@@ -20,14 +20,14 @@ if(isset($_POST['submit'])){
                         $_SESSION['lvl']=$lvl;
         ?>
     <script>
-        document.location='index.php';
+        document.location='../index.php';
     </script>
         <?php
     }else{
         ?>
 <script>
         alert("password or id maybe wrong");
-        document.location='login.php';
+        document.location='../login.php';
     </script>
         <?php
     }

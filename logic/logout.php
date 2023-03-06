@@ -9,7 +9,7 @@ setcookie('cunm',"",(time()+604800));
 setcookie('cups',"",(time()+604800));
 ?>
 <script language="javascript">
-document.location="index.php";
+document.location="../index.php";
 </script>
 <?php
 

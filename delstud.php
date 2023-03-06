@@ -1,6 +1,6 @@
 <?php
-include("back.php");
-include("connection.php");
+include("logic/back.php");
+include("logic/connection.php");
 // $idd=$_SESSION['id'];
 $sid=$_REQUEST['sid'];
 $query=mysqli_query($con,"DELETE FROM student WHERE `sid` = '$sid'")or die(mysqli_error());

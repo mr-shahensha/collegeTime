@@ -1,6 +1,6 @@
 <?php 
-include("connection.php");
-include("back.php");
+ include("logic/connection.php");
+ include("logic/back.php");
 $idd=$_SESSION['id'];
 
 ?>
@@ -59,7 +59,7 @@ $idd=$_SESSION['id'];
 <a href="profile.php"><-back</a>
     <br><br>
 
-    <form action="passlogic.php" method="post" onsubmit='return validation()'>
+    <form action="logic/passlogic.php" method="post" onsubmit='return validation()'>
         <table border="2">
             <tr>
                 <td>Enter old password</td>

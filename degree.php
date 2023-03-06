@@ -1,6 +1,6 @@
 <?php
-include("connection.php");
-?>
+ include("logic/connection.php");
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

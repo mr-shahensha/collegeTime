@@ -1,5 +1,7 @@
 <?php
-include("connection.php");
+include("logic/connection.php");
+include("logic/back.php");
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

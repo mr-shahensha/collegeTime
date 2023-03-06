@@ -1,5 +1,5 @@
 <?php 
-// include("connection.php");
+// include("logic/connection.php");
 //     if(isset($_POST['submit'])){
 //         $crs=$_REQUEST['crs'];
 //         $deg=$_REQUEST['degid'];
@@ -29,8 +29,8 @@
 </script>
 
 <?php 
-include("connection.php");
-if(isset($_POST['submit'])){
+ include("logic/connection.php");
+ if(isset($_POST['submit'])){
     $crs=$_REQUEST['crs'];
     $deg=$_REQUEST['degid'];
     $query=mysqli_query($con,"select * from deg_crs ");

@@ -1,6 +1,6 @@
 <?php 
-include("connection.php");
-include("back.php");
+ include("logic/connection.php");
+ include("logic/back.php");
 $idd=$_SESSION['id'];
 ?>
 <!DOCTYPE html>
@@ -72,7 +72,7 @@ $idd=$_SESSION['id'];
             ?>
         <td><a href="notification.php">Notification</a></td>
         <?php }?>
-        <td><a href="logout.php">logout</a></td>
+        <td><a href="logic/logout.php">logout</a></td>
         </tr>
     </table>
 

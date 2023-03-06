@@ -1,6 +1,6 @@
 <?php 
-include("connection.php");
-    if(isset($_POST['submit'])){
+ include("logic/connection.php");
+ if(isset($_POST['submit'])){
         $degnm=$_REQUEST['degnm'];
         $f=0;
         $query1=mysqli_query($con,"  SELECT * FROM `degree` ")or die(mysqli_error());

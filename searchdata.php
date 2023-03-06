@@ -1,5 +1,5 @@
 <?php 
-include("connection.php");
+ include("logic/connection.php");
 
 $value=$_REQUEST['value'];
 

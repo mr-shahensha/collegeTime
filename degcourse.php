@@ -1,4 +1,5 @@
-<?php include("connection.php");
+<?php
+ include("logic/connection.php");
 ?>
 
 <!DOCTYPE html>

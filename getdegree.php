@@ -1,6 +1,6 @@
 <?php 
-include("connection.php");
-$clgid=$_REQUEST['a'];
+ include("logic/connection.php");
+ $clgid=$_REQUEST['a'];
 
 ?>
 <!DOCTYPE html>

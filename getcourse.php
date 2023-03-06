@@ -1,6 +1,6 @@
 <?php
-include("back.php");
-include("connection.php");
+include("logic/back.php");
+include("logic/connection.php");
 $degid=$_REQUEST['deg'];
 $clgid=$_REQUEST['clg'];
 

@@ -1,6 +1,6 @@
 <?php 
-include("connection.php");
-include("back.php");
+ include("logic/connection.php");
+ include("logic/back.php");
 $idd=$_SESSION['id'];
 ?>
 <!DOCTYPE html>

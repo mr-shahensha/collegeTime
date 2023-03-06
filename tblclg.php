@@ -1,5 +1,5 @@
 <?php 
-include("connection.php");
+ include("logic/connection.php");
 
 $clgid=$_REQUEST['clg'];
 
