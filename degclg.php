@@ -214,7 +214,7 @@ $query6=mysqli_query($con,"SELECT * FROM `college` ");
               <?php 
         if($_SESSION['lvl']==0){
         ?>
-             <td><a href="deldegclg.php?sid=<?php echo $sid;?>">delete</a></td>
+             <td><a href="delete/deldegclg.php?sid=<?php echo $sid;?>">delete</a></td>
              <?php }else{}?>
 
 </tr>

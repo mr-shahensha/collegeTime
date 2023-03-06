@@ -46,7 +46,7 @@ include("logic/back.php");
                 ?>
                 <td><?php echo $f; ?></td>
                 <td><?php echo $crsnm; ?></td>
-                <td><a href="delcrs.php?sid=<?php echo $sid;?>">delete</a></td>
+                <td><a href="delete/delcrs.php?sid=<?php echo $sid;?>">delete</a></td>
             </tr>
             <?php
 }

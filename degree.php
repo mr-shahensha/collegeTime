@@ -45,7 +45,7 @@
                 ?>
                 <td><?php echo $f; ?></td>
                 <td><?php echo $degnm; ?></td>
-                <td><a href="deldeg.php?sid=<?php echo $sid;?>">delete</a></td>
+                <td><a href="delete/deldeg.php?sid=<?php echo $sid;?>">delete</a></td>
             </tr>
             <?php
 }
