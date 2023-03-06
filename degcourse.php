@@ -130,7 +130,7 @@ while($result4=mysqli_fetch_assoc($query4)){
 }
 echo $crsnm1; 
 ?></td>
-<td><a href="deldegcrs.php?sid=<?php echo $sid;?>">delete</a></td>
+<td><a href="delete/deldegcrs.php?sid=<?php echo $sid;?>">delete</a></td>
     </tr>
     <?php
 }

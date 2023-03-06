@@ -299,7 +299,7 @@ echo $degnm; ?></td>
 <td><?php echo $dob;?></td>
 <td><?php echo $ssn;?></td>
 <td><a href="showpic.php?myid=<?php echo $myid;?>" target="#" title="Click to View Full"><img src="student/<?php echo $myid;?>/student_pic.png" style="height:70px;width:70px;" alt=""></a></td>
-<td><a href="delstud.php?sid=<?php echo $sid;?>">Delete</a></td>
+<td><a href="delete/delstud.php?sid=<?php echo $sid;?>">Delete</a></td>
             <?php }}else{
             ?>
 <td>there is no data</td>
