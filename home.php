@@ -29,10 +29,11 @@
     <!-- Main section start here -->
     <Section class="main">
         <div class="main-notes">
-        <h1>Best College in india</h1>
-            <h2>Chose your favourite course today</h2>
-            <p>goto join page</p>
+        <h1>Best Colleges in india.</h1>
+            <h2>Chose your favourite course today.</h2>
+            <button>goto join page</button>
         </div>
+        <img src="assets/main-image.jpg" alt="">
     </Section>
      <!-- news section start -->
      <h1 class="latest-news-tab">Latest update</h1>
@@ -57,8 +58,8 @@
         <img src="assets/main-image.jpg" alt="">
         </div>
             <div class="legecy-comment">
-                <h1>Legecy that we are carring <br> for 105 years</h1>
-                <p>And we promise we will carry forever</p>
+                <h1>Legecy that we are carring for 105 years</h1>
+                <p>And we promise we will carry forever.</p>
             </div>
     </section>
     <!-- footer section start -->
