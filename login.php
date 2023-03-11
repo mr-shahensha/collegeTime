@@ -14,21 +14,16 @@
         </header>
         <!-- this is hero section -->
         <section class="hero">
-            <div class="img">
             <img src="assets/students.png" alt="image">
-            </div>
-            <div class="login-form">
             <form action="logic/loginlogic.php" method="post" onsubmit="return validation()">
+            <div class="login-form">
             <input type="text" placeholder="enter id" name="id" id='id'  onkeyup="return hidewarn(this.value)">
-
-            <input type="text" placeholder="enter password"  name="pass" id='pass' onkeyup="return hidewarn2(this.value)">
-              
-            <input type="submit" value="submit" name="submit">
+           <input type="text" placeholder="enter password"  name="pass" id='pass' onkeyup="return hidewarn2(this.value)">
+              <input type="submit" value="submit" name="submit">
             </div>
             <b><p id="vali1" style="color:red;"></p></b>
             <b><p id="vali2" style="color:red;"></p></b>
         </form>
-            
     </section>
         <?php include("footer.php");?>
     </body>
