@@ -1,0 +1,41 @@
+.hello {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hello h1{
+    font-size: 40px;
+    margin: 5px;
+    border-bottom: 7px solid rgb(236, 234, 224);
+}
+.hero {
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero .left-hero-section{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: whitesmoke;
+    height: 70vh;
+}
+.hero .left-hero-section ul li{
+    list-style: none;
+    padding-left: 40px;
+    line-height: 70px; 
+
+}
+.hero .left-hero-section ul li a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.755);
+}
+.hero .left-hero-section ul li:hover{
+    background-color: rgba(0, 0, 0, 0.755);
+    color: whitesmoke !important;
+    transition: all .5s;
+}

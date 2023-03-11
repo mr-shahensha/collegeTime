@@ -1,8 +1,3 @@
-<?php 
- include("logic/connection.php");
- include("logic/back.php");
-$idd=$_SESSION['id'];
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,8 +7,7 @@ $idd=$_SESSION['id'];
 
 </head>
 <body>
-    <a href="index.php"><-home</a>
-    <br><br>
+    <!-- <a href="index.php"><-home</a> -->
     <?php 
         if($_SESSION['lvl']==10){
           $query3=mysqli_query($con,"SELECT * FROM `college` where collegeid='$idd'");
@@ -21,11 +15,11 @@ $idd=$_SESSION['id'];
                $clgnm=$result3['collegename'];
            }
            ?>
-                       <h1>Hello <?php echo $clgnm;?></h1>
+                       <!-- <h1>Hello <?php //echo $clgnm;?></h1> -->
         <?php
         }
         else if ($_SESSION['lvl']==0){
-            echo "<h1>Hello Admin</h1>";
+            // echo "<h1>Hello Admin</h1>";
             $query2=mysqli_query($con,"SELECT * FROM `signup` where id='$idd'");
             while($result2=mysqli_fetch_assoc($query2)){
                $id=$result2['id'];
@@ -45,7 +39,7 @@ $idd=$_SESSION['id'];
 
            }
            ?>
-             <h1>Hello <?php echo $name;?></h1>
+             <!-- <h1>Hello <?php //echo $name;?></h1> -->
             <?php
             }
             ?>
