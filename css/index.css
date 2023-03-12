@@ -34,8 +34,10 @@
     font-weight: bold;
     color: rgba(0, 0, 0, 0.755);
 }
+.hero .left-hero-section ul li a:hover{
+    color: white;
+}
 .hero .left-hero-section ul li:hover{
     background-color: rgba(0, 0, 0, 0.755);
-    color: whitesmoke !important;
     transition: all .5s;
 }
