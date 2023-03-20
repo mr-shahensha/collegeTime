@@ -1,31 +1,20 @@
-<?php 
- include("logic/connection.php");
- include("logic/back.php");
-$idd=$_SESSION['id'];
-?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Document</title>
     <script type="text/javascript" src="jquery-1.6.4.min.js"></script>
-
+<link rel="stylesheet" href="css/profile.css">
 </head>
 <body>
-    <a href="index.php"><-home</a>
-    <br><br>
     <?php 
         if($_SESSION['lvl']==10){
           $query3=mysqli_query($con,"SELECT * FROM `college` where collegeid='$idd'");
             while($result3=mysqli_fetch_assoc($query3)){
                $clgnm=$result3['collegename'];
            }
-           ?>
-                       <h1>Hello <?php echo $clgnm;?></h1>
-        <?php
         }
         else if ($_SESSION['lvl']==0){
-            echo "<h1>Hello Admin</h1>";
             $query2=mysqli_query($con,"SELECT * FROM `signup` where id='$idd'");
             while($result2=mysqli_fetch_assoc($query2)){
                $id=$result2['id'];
@@ -44,16 +33,11 @@ $idd=$_SESSION['id'];
                $fee=$result3['fee'];
 
            }
-           ?>
-             <h1>Hello <?php echo $name;?></h1>
-            <?php
             }
             ?>
 
             <!-- form started -->
-
-    <form action="" method="post">
-        <table border="2">
+      <table border="2">
             <!-- id -->
             <tr>
                 <td>
@@ -310,6 +294,5 @@ $idd=$_SESSION['id'];
                 </td>
             </tr>
         </table>
-    </form>
 </body>
 </html>
