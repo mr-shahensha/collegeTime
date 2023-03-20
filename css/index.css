@@ -26,7 +26,6 @@
     list-style: none;
     padding-left: 40px;
     line-height: 70px; 
-
 }
 .hero .left-hero-section ul li a{
     text-decoration: none;
@@ -40,4 +39,30 @@
 .hero .left-hero-section ul li:hover{
     background-color: rgba(0, 0, 0, 0.755);
     transition: all .5s;
+}
+.hero .right-hero-section{
+    width: 70%;
+    height: 70vh;
+}
+.hero .right-hero-section ul{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.755);
+    line-height: 70px; 
+    margin-bottom: 2%;
+}
+.hero .right-hero-section ul li{
+    list-style: none;
+    padding-left: 30px;
+    line-height: 70px; 
+    margin-right: 5%;
+}
+.hero .right-hero-section ul li a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.hero .right-hero-section ul li a:hover{
+    border-bottom: 5px solid black;
 }
