@@ -7,7 +7,11 @@ $idd=$_SESSION['id'];
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/index.css">
-    <title>Document</title>
+     <!-- google font -->
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+    </style>
+    <title>Home</title>
 </head>
 <body>
     <!-- this is header -->
@@ -70,6 +74,7 @@ $idd=$_SESSION['id'];
                     
         </div>
     </section>
+    <!-- this is footer section -->
     <?php include("footer.php");?>
 </body>
 </html>

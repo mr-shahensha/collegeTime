@@ -1,11 +1,20 @@
 <?php
  include("logic/connection.php");
+ include("logic/back.php");
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+<link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/degree.css">
+    <!-- fontawsome link -->
+    <script src="https://kit.fontawesome.com/dce4936410.js" crossorigin="anonymous"></script>
+     <!-- google font -->
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+    </style>
+    <title>Degree-College</title>
     <script>
           function validation() {
     var crs = document.getElementById('crs').value;
@@ -44,11 +53,23 @@
     </script>
 </head>
 <body>
-    <a href="index.php"><-home</a>
-    <h1>degree wise college</h1>
+        <!-- this is header -->
+<Header>
+        <div class="logo"><img src="assets/logo.jpg" alt="logo" ></div>
+</header>
+
+<!-- this is hello section -->
+<section class="hello">
+<h1>degree page</h1>
+</section>
+
     <h1 style="color:red;">submit e problem</h1>
+    <!-- this is hero section -->
+<section class="degree-hero">
+    <!-- hero section part one -->
+    <div class="part-one">
 <form action="subdegcrs.php" method="post"  onsubmit="return validation()">
-<table border="2">
+<table>
 
 <tr>
     <td>degree :</td>
@@ -92,13 +113,16 @@
 <b><p id='demo2' style="color:red;"></p></b>
 
 </form>
-<br> <br>
-<table border="2" >
+</div>
+    
+    <!-- hero section part two -->
+    <div class="part-two">
+<table>
     <tr>
         <td>sid</td>
         <td>degree</td>
         <td>course</td>
-        <td>action</td>
+        <td>delete</td>
     </tr>
     
         <?php
@@ -130,7 +154,7 @@ while($result4=mysqli_fetch_assoc($query4)){
 }
 echo $crsnm1; 
 ?></td>
-<td><a href="delete/deldegcrs.php?sid=<?php echo $sid;?>">delete</a></td>
+<td><a href="delete/deldegcrs.php?sid=<?php echo $sid;?>"><i class="fa-solid fa-trash-can"></i></a></td>
     </tr>
     <?php
 }
@@ -140,7 +164,10 @@ echo $crsnm1;
             <?php
         }
         ?>
-  
 </table>
+</div>
+</section>
+ <!-- this is footer section -->
+ <?php include("footer.php");?>
 </body>
 </html>

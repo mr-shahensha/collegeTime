@@ -102,15 +102,32 @@ $idd=$_SESSION['id'];
     }
    }
 </script>
-    <title>Document</title>
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/degree.css">
+ <!-- fontawsome link -->
+ <script src="https://kit.fontawesome.com/dce4936410.js" crossorigin="anonymous"></script>
+     <!-- google font -->
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+    </style>
+    <title>Submit Students</title>
 </head>
 <body>
-<a href="index.php"><-home</a>
+    <!-- this is header -->
+    <Header>
+        <div class="logo"><img src="assets/logo.jpg" alt="logo" ></div>
+    </header>
+ <!-- this is hello section -->
+<section class="hello">
+<h1>Course page</h1>
+</section>
 
-<br>
-<h1>Submit student</h1><br>
+<!-- this is hero section -->
+<section class="degree-hero">
+    <!-- hero section part one -->
+    <div class="part-one">
     <form action="substud.php" method="post" onsubmit="return validation()" enctype="multipart/form-data">
-    <table border="1">
+    <table>
     <tr>
         <td>college</td>
         <td>
@@ -231,7 +248,7 @@ for( $i=2018; $i<=2024; $i++ )
         <td>number</td>
         <td><input type="number" placeholder="enter your number" name="number" id="number" onkeyup="return hidewarn4(this.value)"></td>
     </tr>
-<tr><td><input type="submit" value="submit" name="submit"></td></tr>
+<tr><td colspan="2"><input style="margin-left:40%; width:300px" type="submit" value="submit" name="submit"></td></tr>
     </table>
     </form>
     <b><p id='demo' style="color:red;"></p></b>
@@ -241,11 +258,10 @@ for( $i=2018; $i<=2024; $i++ )
     <b><p id='demo5' style="color:red;"></p></b>
     <b><p id='demo6' style="color:red;"></p></b>
     <b><p id='demo7' style="color:red;"></p></b>
-
-<br>
-
+<!-- hero section part two -->
+<div class="part-two">
  <!-- data table started -->
-<table border="1">
+<table>
         <tr>
             <td><b>sid</b></td>
             <td><b>degree</b></td>
@@ -299,12 +315,16 @@ echo $degnm; ?></td>
 <td><?php echo $dob;?></td>
 <td><?php echo $ssn;?></td>
 <td><a href="showpic.php?myid=<?php echo $myid;?>" target="#" title="Click to View Full"><img src="student/<?php echo $myid;?>/student_pic.png" style="height:70px;width:70px;" alt=""></a></td>
-<td><a href="delete/delstud.php?sid=<?php echo $sid;?>">Delete</a></td>
+<td><a href="delete/delstud.php?sid=<?php echo $sid;?>"><i class="fa-solid fa-trash-can"></i></a></td>
             <?php }}else{
             ?>
 <td>there is no data</td>
             <?php }?>
         </tr>
     </table>
+    </div>
+    </section>
+    <!-- this is footer section -->
+    <?php include("footer.php");?>
 </body>
 </html>
