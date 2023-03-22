@@ -37,7 +37,8 @@
         <div class="main-notes">
         <h1>Best Colleges in india.</h1>
             <h2>Chose your favourite course today.</h2>
-            <button>goto join page</button>
+            <p>Use "admin" for both login id and password</p>
+            <button>goto login page</button>
         </div>
         <img src="assets/main-image.jpg" alt="">
     </Section>
