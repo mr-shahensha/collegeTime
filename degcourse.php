@@ -63,7 +63,6 @@
 <h1>degree page</h1>
 </section>
 
-    <h1 style="color:red;">submit e problem</h1>
     <!-- this is hero section -->
 <section class="degree-hero">
     <!-- hero section part one -->

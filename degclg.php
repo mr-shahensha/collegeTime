@@ -83,7 +83,6 @@ $idd=$_SESSION['id'];
 <section class="hello">
 <h1>degree page</h1>
 </section>
-<h1 style="color:red;">submit e problem ache</h1>
 <!-- this is hero section -->
 <section class="degree-hero">
     <!-- hero section part one -->

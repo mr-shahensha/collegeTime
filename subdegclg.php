@@ -30,5 +30,5 @@ if(isset($_POST['submit'])){
 ?>
 <script>
     alert("succesfully inserted");
-    //document.location="degclg.php";
+    document.location="degclg.php";
 </script>
