@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 20, 2022 at 06:55 AM
+-- Generation Time: Mar 22, 2023 at 07:24 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -38,7 +38,7 @@ CREATE TABLE `college` (
 --
 
 INSERT INTO `college` (`sid`, `collegeid`, `collegename`) VALUES
-(1, 'clg0', 'surendranath college');
+(1, 'clg0', 'Surendranath college');
 
 -- --------------------------------------------------------
 
@@ -76,7 +76,7 @@ CREATE TABLE `degree` (
 --
 
 INSERT INTO `degree` (`sid`, `degreeid`, `degreename`) VALUES
-(1, 'deg0', 'Bsc');
+(1, 'deg0', 'Msc');
 
 -- --------------------------------------------------------
 
@@ -95,7 +95,7 @@ CREATE TABLE `deg_crs` (
 --
 
 INSERT INTO `deg_crs` (`sid`, `degid`, `crsid`) VALUES
-(1, 'deg0', 'crs0');
+(2, 'deg0', 'crs0');
 
 -- --------------------------------------------------------
 
@@ -116,7 +116,7 @@ CREATE TABLE `deg_crs_clg` (
 --
 
 INSERT INTO `deg_crs_clg` (`sid`, `degid`, `crsid`, `clgid`, `fee`) VALUES
-(1, 'deg0', 'crs0', 'clg0', '10000');
+(1, 'deg0', 'crs0', 'clg0', '744444');
 
 -- --------------------------------------------------------
 
@@ -135,16 +135,6 @@ CREATE TABLE `request` (
   `reqdate` varchar(255) NOT NULL,
   `statusdate` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `request`
---
-
-INSERT INTO `request` (`sid`, `stud_id`, `clgid`, `name`, `number`, `dateofbirth`, `status`, `reqdate`, `statusdate`) VALUES
-(1, 'o', 'd', '4', 'od', 'o', 'o', '', ''),
-(2, '2019clg0deg0crs0001', 'clg0', 'shahensha alam', '8768009813', '2022-11-01', '2', '', ''),
-(4, '2019clg0deg0crs0001', 'clg0', 'shahensha alam', '8768009810', '2022-11-01', '-1', '', ''),
-(6, '2019clg0deg0crs0001', 'clg0', 'Shahensha Alam', '8768009813', '2022-11-01', '1', '19/11/2022 08:59:44 pm', '');
 
 -- --------------------------------------------------------
 
@@ -166,9 +156,8 @@ CREATE TABLE `signup` (
 --
 
 INSERT INTO `signup` (`sid`, `id`, `password`, `date`, `lvl`, `last_login`) VALUES
-(1, 'admin', 'admin', '', '0', '20/11/2022 11:20:05 am'),
-(2, 'clg0', 'clg0', '13/11/2022', '10', '19/11/2022 08:47:08 pm'),
-(3, '2019clg0deg0crs0001', '20221101', '13/11/2022', '5', '19/11/2022 08:53:58 pm');
+(1, 'admin', 'admin', '', '0', '22/03/2023 11:50:03 pm'),
+(14, 'clg0', 'clg0', '22/03/2023', '10', '');
 
 -- --------------------------------------------------------
 
@@ -188,13 +177,6 @@ CREATE TABLE `student` (
   `session` varchar(255) NOT NULL,
   `fee` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `student`
---
-
-INSERT INTO `student` (`sid`, `myid`, `name`, `number`, `dateofbirth`, `degree`, `course`, `college`, `session`, `fee`) VALUES
-(1, '2019clg0deg0crs0001', 'shahensha alam', '8768009813', '2022-11-01', 'deg0', 'crs0', 'clg0', '2019', '10000.Rs');
 
 --
 -- Indexes for dumped tables
@@ -274,7 +256,7 @@ ALTER TABLE `degree`
 -- AUTO_INCREMENT for table `deg_crs`
 --
 ALTER TABLE `deg_crs`
-  MODIFY `sid` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `sid` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `deg_crs_clg`
@@ -286,19 +268,19 @@ ALTER TABLE `deg_crs_clg`
 -- AUTO_INCREMENT for table `request`
 --
 ALTER TABLE `request`
-  MODIFY `sid` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `sid` int(255) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `signup`
 --
 ALTER TABLE `signup`
-  MODIFY `sid` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `sid` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
-  MODIFY `sid` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `sid` int(255) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
