@@ -184,3 +184,15 @@ box-shadow: none;}
     align-items: center;
     margin: 20px;
 }
+.checkbtn{
+    float: right;
+    line-height: 80px;
+    font-size: 30px;
+    color: white;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}

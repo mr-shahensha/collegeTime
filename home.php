@@ -10,6 +10,8 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
     </style>
+    <!-- navbar button cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <title>collegeTime</title>
 </head>
 <body>
@@ -17,6 +19,10 @@
     <Header>
         <div class="logo"><img src="assets/logo.jpg" alt="logo" ></div>
         <nav>
+        <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+    </label> 
             <ul>
                 <li><a href="">Course</a></li>
                 <li><a href="">Colleges</a></li>
