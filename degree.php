@@ -1,18 +1,37 @@
 <?php
  include("logic/connection.php");
+ include("logic/back.php");
  ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/degree.css">
+    <!-- fontawsome link -->
+    <script src="https://kit.fontawesome.com/dce4936410.js" crossorigin="anonymous"></script>
+    <!-- google font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+    </style>
+        <title>Degree</title>
 </head>
 <body>
-<a href="index.php"><-home</a>
+    <!-- this is header -->
+<Header>
+        <div class="logo"><img src="assets/logo.jpg" alt="logo" ></div>
+</header>
 
+<!-- this is hello section -->
+<section class="hello">
 <h1>degree page</h1>
+</section>
 
+<!-- this is hero section -->
+<section class="degree-hero">
+    <!-- hero section part one -->
+    <div class="part-one">
     <form action="subdeg.php" method="post" onsubmit="return validation()">
-    <table  border="2">
+    <table>
         <tr>
             <td>degre :</td>
             <td><input type="text" placeholder="enter your text" name="degnm" id="degnm" onkeyup="hide(this.value)"  autocomplete="off" ></td>
@@ -20,17 +39,16 @@
         </tr>
     </table>
     <b><p id='demo' style="color:red;"></p></b>
-
     </form>
+    </div>
 
-   
-    <br>
-    <div>
-        <table  border="2">
+    <!-- hero section part two -->
+    <div class="part-two">
+    <table>
             <tr>
                 <td>sid</td>
                 <td>degree</td>
-                <td>action</td>
+                <td>delete</td>
             </tr>
             <tr>
                 <?php 
@@ -45,7 +63,7 @@
                 ?>
                 <td><?php echo $f; ?></td>
                 <td><?php echo $degnm; ?></td>
-                <td><a href="delete/deldeg.php?sid=<?php echo $sid;?>">delete</a></td>
+                <td><a href="delete/deldeg.php?sid=<?php echo $sid;?>"><i class="fa-solid fa-trash-can"></i></a></td>
             </tr>
             <?php
 }
@@ -55,8 +73,12 @@
             <?php
         }
         ?>
-        </table>
+            </table>
     </div>
+</section>
+    
+     <!-- this is footer section -->
+     <?php include("footer.php");?>
 </body>
 </html>
 

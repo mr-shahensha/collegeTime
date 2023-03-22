@@ -5,10 +5,7 @@ $idd=$_SESSION['id'];
 ?>
 <!DOCTYPE html>
 <script type="text/javascript" src="jquery-1.6.4.min.js"></script>
-
-<html lang="en">
-<head>
-    <script>
+<script>
         function fun(a)
         { 
             $('#crs').load('getcourse00.php?deg='+a).fadeIn('fast');
@@ -64,13 +61,33 @@ $idd=$_SESSION['id'];
             }               
         }
     </script>
-    <title>Document</title>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/degree.css">
+    <!-- fontawsome link -->
+    <script src="https://kit.fontawesome.com/dce4936410.js" crossorigin="anonymous"></script>
+    <!-- google font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+    </style>
+    <title>Degree wise college</title>
 </head>
 <body>
-<a href="index.php"><-home</a>
-<br>
-<h1>Degree wise college</h1><br>
+    <!-- this is header -->
+    <Header>
+        <div class="logo"><img src="assets/logo.jpg" alt="logo" ></div>
+</header>
+
+<!-- this is hello section -->
+<section class="hello">
+<h1>degree page</h1>
+</section>
 <h1 style="color:red;">submit e problem ache</h1>
+<!-- this is hero section -->
+<section class="degree-hero">
+    <!-- hero section part one -->
+    <div class="part-one">
 <form  action="subdegclg.php" method="post" onsubmit="return validation()">
 <table border="1" >
 <tr>
@@ -139,8 +156,8 @@ $query6=mysqli_query($con,"SELECT * FROM `college` ");
         
     </tr>
     <tr>
-    <td>
-            <input type="submit" value="submit" name="submit">
+    <td colspan="2">
+            <input style="margin-left:130px;" type="submit" value="submit" name="submit">
         </td>
     </tr>
 </table>
@@ -150,10 +167,12 @@ $query6=mysqli_query($con,"SELECT * FROM `college` ");
 <b><p id='demo3' style="color:red;"></p></b>
 
 </form>
-<br> <br>
-
+</div>
+    
+    <!-- hero section part two -->
+    <div class="part-two">
 <div class="showdata">
-<table border="1">
+<table>
 <tr>
     <td><b>sid</b></td>
     <td><b>degree</b></td>
@@ -163,7 +182,7 @@ $query6=mysqli_query($con,"SELECT * FROM `college` ");
     <?php 
         if($_SESSION['lvl']==0){
         ?>
-    <td><b>action</b></td>
+    <td><b>delete</b></td>
     </tr>
     <?php }else{}?>
 
@@ -214,7 +233,7 @@ $query6=mysqli_query($con,"SELECT * FROM `college` ");
               <?php 
         if($_SESSION['lvl']==0){
         ?>
-             <td><a href="delete/deldegclg.php?sid=<?php echo $sid;?>">delete</a></td>
+             <td><a href="delete/deldegclg.php?sid=<?php echo $sid;?>"><i class="fa-solid fa-trash-can"></i></a></td>
              <?php }else{}?>
 
 </tr>
@@ -228,5 +247,10 @@ $query6=mysqli_query($con,"SELECT * FROM `college` ");
     ?>
 </table>
 </div>
+</div>
+</section>
+    
+     <!-- this is footer section -->
+     <?php include("footer.php");?>
 </body>
 </html>

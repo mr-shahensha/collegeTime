@@ -1,0 +1,76 @@
+.degree-hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+}
+.degree-hero table {
+    margin: 5px;
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.755);
+    border-radius: 3px;
+    font-size: 30px;
+    font-weight: 200;
+  }
+  
+  th, td {
+    border: 1px solid rgba(0, 0, 0, 0.755);
+    text-align: left;
+    padding: 8px;
+  }
+  tr:nth-child(even) {background-color: #f2f2f2;}
+
+  .degree-hero input[type=text]{
+    width: 250px;
+    height: 40px;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 8px;
+    color: rgba(0, 0, 0, 0.755);
+    border-radius: 5px;
+  }
+  .degree-hero input[type=password]{
+    width: 350px;
+    height: 40px;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 8px;
+    color: rgba(0, 0, 0, 0.755);
+    border-radius: 5px;
+  }
+  .degree-hero input[type=submit]{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color:rgba(0, 0, 0, 0.755) ;
+    color: white;
+    font-size: 28px;
+  }
+  .degree-hero select{
+    width: 220px;
+    height: 40px;
+    border-radius: 5px;
+    background-color:rgba(0, 0, 0, 0.755) ;
+    color: white;
+    font-size: 28px;
+  }
+  .degree-hero #demo,#demo2{
+    font-size: 18px;
+    margin-left: 25px;
+  }
+  .degree-hero input[type=submit]:hover{
+    background-color:white;
+    color: rgba(0, 0, 0, 0.755);
+    border :2px solid rgba(0, 0, 0, 0.755);
+    transition: all .6s;
+  }
+  .degree-hero a{
+    color:red;
+    margin-left: 30px;
+  }
+  .degree-hero a:hover{
+    color: rgb(114, 10, 10);
+    transition: all .6s;
+  }

@@ -37,13 +37,25 @@ function fun(a){
         }
     }
 </script> 
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/degree.css">
+    <!-- fontawsome link -->
+    <script src="https://kit.fontawesome.com/dce4936410.js" crossorigin="anonymous"></script>
+     <!-- google font -->
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+    </style>
     <title>Document</title>
 </head>
 <body>
-<a href="index.php"><-home</a>
-<br>
-<h1>search page</h1>
-<br>
+    <!-- this is header -->
+    <Header>
+        <div class="logo"><img src="assets/logo.jpg" alt="logo" ></div>
+    </header>
+ <!-- this is hello section -->
+<section class="hello">
+<h1>Search page</h1>
+</section>
  
 <?php
 if($_SESSION['lvl']==0){
@@ -52,6 +64,10 @@ $query6=mysqli_query($con,"SELECT * FROM `college` ");
     $query6=mysqli_query($con,"SELECT * FROM `college` where collegeid='$idd' ");
 }
 ?>
+<!-- this is hero section -->
+<section class="degree-hero">
+    <!-- hero section part one -->
+    <div class="part-one">
     <table border="1">
         <tr>
             <td>
@@ -116,12 +132,13 @@ $query6=mysqli_query($con,"SELECT * FROM `college` ");
     <table>
         <tr>
         <form action="tblnm.php" method="post">  
-        <td><input style="width:160px;" type="text" placeholder="search by name" name="value" autocomplete="off"  onkeyup="fun4(this.value)"></td>
+        <td><input style="width:250px;" type="text" placeholder="search by name" name="value" autocomplete="off"  onkeyup="fun4(this.value)"></td>
         
         </form>  
         </tr>
     </table>
-    <br>
+    <!-- hero section part two -->
+    <div class="part-two">
     <div id="searchdata">
     <table border="1">
         <tr>
@@ -189,5 +206,9 @@ echo $degnm; ?></td>
         </tr>
     </table>
     </div>
+    </div>
+    </section>
+    <!-- this is footer section -->
+    <?php include("footer.php");?>
 </body>
 </html>

@@ -6,14 +6,32 @@ include("logic/back.php");
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/degree.css">
+    <!-- fontawsome link -->
+    <script src="https://kit.fontawesome.com/dce4936410.js" crossorigin="anonymous"></script>
+     <!-- google font -->
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+    </style>
+    <title>Course</title>
 </head>
 <body>
-<a href="index.php"><-home</a>
+    <!-- this is header -->
+    <Header>
+        <div class="logo"><img src="assets/logo.jpg" alt="logo" ></div>
+    </header>
+ <!-- this is hello section -->
+<section class="hello">
+<h1>Course page</h1>
+</section>
 
-    <h1>course page</h1>
+<!-- this is hero section -->
+<section class="degree-hero">
+    <!-- hero section part one -->
+    <div class="part-one">
     <form action="subcrs.php" method="post" onsubmit="return validation()">
-    <table  border="2">
+    <table>
         <tr>
             <td>course :</td>
             <td><input type="text" placeholder="enter your text" name="crsnm" id="crsnm" onkeyup="return hide(this.value)"></td>
@@ -21,17 +39,14 @@ include("logic/back.php");
         </tr>
     </table>
     <b><p id='demo' style="color:red;"></p></b>
-
     </form>
-
-   
-    <br>
-    <div>
-        <table  border="2">
+    <!-- hero section part two -->
+    <div class="part-two">
+        <table>
             <tr>
                 <td>sid</td>
                 <td>course</td>
-                <td>action</td>
+                <td>delete</td>
             </tr>
             <tr>
                 <?php 
@@ -46,7 +61,7 @@ include("logic/back.php");
                 ?>
                 <td><?php echo $f; ?></td>
                 <td><?php echo $crsnm; ?></td>
-                <td><a href="delete/delcrs.php?sid=<?php echo $sid;?>">delete</a></td>
+                <td><a href="delete/delcrs.php?sid=<?php echo $sid;?>"><i class="fa-solid fa-trash-can"></i></a></td>
             </tr>
             <?php
 }
@@ -58,6 +73,9 @@ include("logic/back.php");
         ?>
         </table>
     </div>
+    </section>
+    <!-- this is footer section -->
+    <?php include("footer.php");?>
 </body>
 </html>
 
