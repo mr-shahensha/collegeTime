@@ -52,5 +52,5 @@
 ?>
    <script>
         alert("data inserted!");
-        //document.location="degcourse.php";
+        document.location="degcourse.php";
     </script>

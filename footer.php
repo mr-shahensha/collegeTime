@@ -9,7 +9,6 @@
                 <li><a href="">Colleges</a></li>
                 <li><a href="">Statistics</a></li>
                 <li><a href="">Blogs</a></li>
-                <li><a href="login.php">Login</a></li>
             </ul>
         </div>
         <!-- web links of collegetime -->
