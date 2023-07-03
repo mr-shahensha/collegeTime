@@ -8,7 +8,7 @@ if(isset($_POST['submit'])){
     $crs=$_REQUEST['crs'];
     $clg=$_REQUEST['clg'];
     $fees=$_REQUEST['fees'];
-
+    $crsid="";
     $query0=mysqli_query($con,"select * from `deg_crs_clg` where degid='$deg' and crsid='$crs' and clgid='$clg'");
     while($result=mysqli_fetch_assoc($query0)){
         $degid=$result['degid'];
