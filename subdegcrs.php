@@ -1,56 +1,36 @@
 <?php 
-// include("logic/connection.php");
-//     if(isset($_POST['submit'])){
-//         $crs=$_REQUEST['crs'];
-//         $deg=$_REQUEST['degid'];
-
-//         $query=mysqli_query($con,"Select * from deg_crs");
-//         while($result=mysqli_fetch_assoc($query)){
-//             $degid=$result['degid'];
-//             $crsid=$result['crsid'];
-//         }
-//         if($crs==$crsid && $deg==$degid){
-            ?>
-                <script>
-                    // alert("this data already exist");
-                    // document.location="degcourse.php";
-
-                </script>
-            <?php 
-        // }else{
-        //     $query1=mysqli_query($con,"INSERT INTO `deg_crs` (`sid`, `degid`, `crsid`) VALUES (NULL, '$deg', '$crs'); ");
-        // }
-        //     }
-    ?>
-<script>
-    //alert("succesfully inserted");
-    // document.location="degcourse.php";
-
-</script>
-
-<?php 
  include("logic/connection.php");
- if(isset($_POST['submit'])){
+ include("logic/back.php");
+
+if(isset($_POST['submit'])){
+    
+    $deg=$_REQUEST['degree'];
     $crs=$_REQUEST['crs'];
-    $deg=$_REQUEST['degid'];
-    $query=mysqli_query($con,"select * from deg_crs ");
-    while($result=mysqli_fetch_assoc($query)){
+    $clg=$_REQUEST['clg'];
+    $fees=$_REQUEST['fees'];
+    $degid="";
+    $crsid ="";
+    $clgid="";
+    $query0=mysqli_query($con,"select * from `deg_crs_clg` where degid='$deg' and crsid='$crs' and clgid='$clg'");
+    while($result=mysqli_fetch_assoc($query0)){
         $degid=$result['degid'];
         $crsid=$result['crsid'];
+        $clgid=$result['clgid']; 
     }
-    if($crs==$crsid && $deg==$degid){
+    if($deg==$degid && $crs==$crsid && $clg==$clgid){
         ?>
-    <script>
-        alert("this data is already exsist!");
-        document.location="degcourse.php";
-    </script>
+                <script>
+            alert("this data already exist");
+            document.location="degclg.php";
+                </script>
         <?php
-    } else{
-        $query2=mysqli_query($con,"INSERT INTO `deg_crs` (`sid`, `degid`, `crsid`) VALUES (NULL, '$deg', '$crs');");
+    }else{
+        $query=mysqli_query($con,"INSERT INTO `deg_crs_clg` (`sid`, `degid`, `crsid`, `clgid`, `fee`) VALUES (NULL, '$deg', '$crs', '$clg', '$fees');");
     }
+
 }
 ?>
-   <script>
-        alert("data inserted!");
-        //document.location="degcourse.php";
-    </script>
+<script>
+    alert("succesfully inserted");
+    //document.location="degclg.php";
+</script>
